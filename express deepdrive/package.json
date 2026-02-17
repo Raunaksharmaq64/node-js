@@ -1,0 +1,22 @@
+{
+  "name": "express-chap1-practice-set",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  },
+  "dependencies": {
+    "body": "^5.1.0",
+    "express": "^5.2.1",
+    "parser": "^0.1.4"
+  }
+}
