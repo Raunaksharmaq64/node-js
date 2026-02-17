@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 Not Found</title>
+
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+  }
+
+  .container {
+    text-align: center;
+    color: white;
+    animation: fadeIn 1.2s ease-in-out;
+  }
+
+  .oops {
+    font-size: 28px;
+    letter-spacing: 2px;
+    opacity: 0;
+    animation: slideDown 1s ease forwards;
+  }
+
+  .code {
+    font-size: 120px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #ff4b5c;
+    text-shadow: 0 0 20px rgba(255,75,92,0.7);
+    animation: pulse 1.8s infinite;
+  }
+
+  .notfound {
+    font-size: 22px;
+    opacity: 0;
+    animation: slideUp 1s ease forwards;
+    animation-delay: 0.5s;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes slideDown {
+    from {
+      transform: translateY(-40px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      transform: translateY(40px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes pulse {
+    0%,100% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+  }
+</style>
+</head>
+
+<body>
+
+  <div class="container">
+    <p class="oops">⚠️ Oops... Status</p>
+    <h2 class="code">404</h2>
+    <p class="notfound">Page Not Found</p>
+  </div>
+
+</body>
+</html>
