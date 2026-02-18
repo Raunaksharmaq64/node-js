@@ -8,21 +8,24 @@ userRouter=express.Router();
 
 
 
+///creating path
+const rootDir=require("../utils/pathUtil");
 
 
 userRouter.post("/bookRoom",(req,res,next)=>{
   console.log(req.body)
-res.sendFile(path.join(__dirname,'../','views','roomBook.html'));
+res.sendFile(path.join(rootDir,'views','roomBook.html'));
+
 });
 
 userRouter.get("/resister-user",(req,res,next)=>{
    console.log(req.body)
-res.sendFile(path.join(__dirname,'../','views','registerUser.html'));
+res.sendFile(path.join(rootDir,'views','registerUser.html'));
 })
 
 userRouter.post("/resister-user",(req,res,next)=>{
    console.log(req.body)
-res.sendFile(path.join(__dirname,'../','views','registerUser.html'));
+res.sendFile(path.join(rootDir,'views','registerUser.html'));
 })
 
 module.exports=userRouter;

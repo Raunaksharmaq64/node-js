@@ -7,7 +7,10 @@ const app = express();
 //// local module imported from file
 const hostRouter=require("./routers/hostRouter");
 
-const userRouter=require("./routers/userRouter")
+const userRouter=require("./routers/userRouter");
+
+///creating path
+const rootDir=require("./utils/pathUtil");
 
 
 app.use((req,res,next)=>{
