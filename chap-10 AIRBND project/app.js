@@ -14,7 +14,7 @@ const rootDir=require("./utils/pathUtil");
 
 
 app.use((req,res,next)=>{
-console.log(req.url,req.method);
+console.log(req.url,req.body);
 next();
 })
 
